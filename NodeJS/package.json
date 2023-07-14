@@ -1,0 +1,18 @@
+{
+  "name": "Qualquer-nome",
+  "version": "1.0.0",
+  "description": "aprendendo node",
+  "main": "console.js",
+  "scripts": {
+    "start": "node naifa.js"
+  },
+  "keywords": [
+    "Node",
+    "js"
+  ],
+  "author": "Francisco",
+  "license": "wolfswinkel",
+  "dependencies": {
+    "cfonts": "^3.2.0"
+  }
+}
