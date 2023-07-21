@@ -3,14 +3,48 @@ const app = express();
 app.set('view engine', 'ejs');
 
 app.get("/", function (req, res){
-    res.render("index") ;
-})
+const items = [
+    {
+        title: "F",
+        mensagem: "elicidade"},
+    {
+        title: "R",
+        mensagem: "espeito"},
+    {
+        title: "A",
+        mensagem: "gilidade"},
+    {
+        title: "N",
+        mensagem: "acionalista"},
+    {
+        title: "C",
+        mensagem: "onciente"},
+    {
+        title: "I",
+        mensagem: "ntelectual"},
+    {
+        title: "S",
+        mensagem: "olidário"},
+    {
+        title: "C",
+        mensagem: "oerente"},
+    {
+        title: "O",
+        mensagem: "timista",}
+];
 
 
-app.get("/sobre", function (req, res){
-    res.render("about") ;
+    res.render("pages/index", {
+        qualitys: items,
+    });
+});
+       
+
+
+app.get("/about", function (req, res){
+    res.render("pages/about") ;
 })
 
 app.listen(8080);
 
-console.log('Rodando');
+console.log('Servidor está iniciando');
